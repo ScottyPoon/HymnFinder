@@ -46,10 +46,17 @@ export default function OutlinedCard({
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        marginTop: "20px",
+        marginBottom: "15px",
       }}
     >
-      <Card variant="outlined">
+      <Card
+        variant="outlined"
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
         {MyCard({ title, author, scripture_reference, link })}
       </Card>
     </Box>

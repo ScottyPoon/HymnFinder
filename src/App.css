@@ -22,9 +22,18 @@
 }
 
 .formContainer {
-  position: sticky;
-  top: 0; /* Keep it at the top of the viewport */
-  z-index: 10; /* Ensure it stays above other content */
+  background-color: #f0f0f0;
+  padding-bottom: 15px;
+}
+
+.cardBoxContainer {
+  background-color: #f0f0f0;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
 }
 
 label {
