@@ -1,38 +1,33 @@
-.App {
-  text-align: center;
+/* App.css */
+.title {
+  font-family: "Arial", sans-serif; /* Use your preferred font-family */
+  font-size: 24px; /* Adjust the font size */
+  font-weight: bold; /* Make the text bold */
+  color: #3366cc; /* Set the text color (you can choose your own color) */
+  text-align: center; /* Center the text */
+  text-transform: uppercase; /* Convert the text to uppercase */
+  letter-spacing: 2px; /* Add some letter spacing */
+  margin-bottom: 10px; /* Add space at the bottom */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a subtle text shadow */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.f_line {
+  color: #32a74b; /* Set the text color (you can choose your own color) */
+  text-align: center; /* Center the text */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.text_link {
+  color: #32a74b; /* Set the text color (you can choose your own color) */
+  text-align: center; /* Center the text */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.formContainer {
+  position: sticky;
+  top: 0; /* Keep it at the top of the viewport */
+  z-index: 10; /* Ensure it stays above other content */
 }
 
-.App-link {
-  color: #61dafb;
+label {
+  margin-bottom: 8px; /* Adjust as needed for spacing */
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* Additional styling for SearchBar and MakeRequest components as needed */
