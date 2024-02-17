@@ -1,7 +1,5 @@
 import React from "react";
-import Input from "@mui/material/Input";
-import Box from "@mui/material/Box";
-
+import { Input, Box } from "@mui/material";
 const MyInput = ({ handleChange }) => {
   return (
     <Box>
