@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/HymnFinder/static/css/main.8a24b17a.css",
+    "main.js": "/HymnFinder/static/js/main.35254ab7.js",
+    "index.html": "/HymnFinder/index.html",
+    "main.8a24b17a.css.map": "/HymnFinder/static/css/main.8a24b17a.css.map",
+    "main.35254ab7.js.map": "/HymnFinder/static/js/main.35254ab7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8a24b17a.css",
+    "static/js/main.35254ab7.js"
+  ]
+}
