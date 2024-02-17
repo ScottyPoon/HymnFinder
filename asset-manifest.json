@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/HymnFinder/static/css/main.8a24b17a.css",
-    "main.js": "/HymnFinder/static/js/main.35254ab7.js",
+    "main.css": "/HymnFinder/static/css/main.a195f710.css",
+    "main.js": "/HymnFinder/static/js/main.74aa1fdd.js",
     "index.html": "/HymnFinder/index.html",
-    "main.8a24b17a.css.map": "/HymnFinder/static/css/main.8a24b17a.css.map",
-    "main.35254ab7.js.map": "/HymnFinder/static/js/main.35254ab7.js.map"
+    "main.a195f710.css.map": "/HymnFinder/static/css/main.a195f710.css.map",
+    "main.74aa1fdd.js.map": "/HymnFinder/static/js/main.74aa1fdd.js.map"
   },
   "entrypoints": [
-    "static/css/main.8a24b17a.css",
-    "static/js/main.35254ab7.js"
+    "static/css/main.a195f710.css",
+    "static/js/main.74aa1fdd.js"
   ]
 }
