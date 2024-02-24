@@ -9,7 +9,8 @@ const MyButton = () => {
         type="submit"
         variant="contained"
         color="primary"
-        sx={{ marginLeft: "20px" }}
+        size="small"
+        //sx={{ marginLeft: "20px" }}
       >
         Search Hymn
       </Button>

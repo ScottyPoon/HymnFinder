@@ -39,48 +39,59 @@ function App() {
   return (
     <div
       style={{
-        backgroundColor: "#333333",
+        display: "flex",
+
+        flexDirection: "column",
+        alignItems: "center",
+        //backgroundColor: "#333333",
+
+        backgroundColor: "#f0f0f0",
         minHeight: "100vh",
       }}
     >
-      <form className="formContainer" onSubmit={handleSubmit}>
-        <Typography variant="h2" sx={{ textAlign: "center", color: "#333333" }}>
+      <Box sx={styles.container}>
+        <Typography variant="h2" sx={{ color: "#333333" }}>
           Hymn Finder
         </Typography>
-        <Typography sx={{ textAlign: "center" }}>By Scotty Poon</Typography>
+        <Typography>By Scotty Poon</Typography>
         <Typography variant="h5" sx={{ textAlign: "center" }}>
           Enter Scripture Passage
         </Typography>
-        <Box
-          sx={{ display: "flex", justifyContent: "center", marginLeft: "20px" }}
-        >
-          <MyInput handleChange={handleChange} />
-          <MyButton />
-        </Box>
-      </form>
-      {/* Display the fetched data or loading indicator */}
-      {loading ? (
-        <Box
-          sx={{ display: "flex", justifyContent: "center", marginTop: "20px" }}
-        >
-          <CircularProgress />
-        </Box>
-      ) : data ? (
-        <Box>
-          {/* Render the fetched data */}
-          <Box className="cardBoxContainer" sx={styles.cardContainer}>
-            {Object.keys(data).map((key) => (
-              <OutlinedCard
-                key={key}
-                title={data[key].title}
-                author={data[key].author ? data[key].author : "No Author"}
-                scripture_reference={data[key]["scripture references"]}
-                link={data[key]["text link"]}
-              />
-            ))}
+        <form onSubmit={handleSubmit}>
+          <Box sx={styles.formContainer}>
+            <MyInput handleChange={handleChange} />
+            <MyButton />
           </Box>
-        </Box>
-      ) : null}
+        </form>
+        {/* Display the fetched data or loading indicator */}
+        {loading ? (
+          <Box
+            className="loadingContainer"
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              marginTop: "5vh",
+            }}
+          >
+            <CircularProgress />
+          </Box>
+        ) : data ? (
+          <Box className="outerCardBoxContainer" sx={styles.outerCardContainer}>
+            {/* Render the fetched data */}
+            <Box className="cardBoxContainer" sx={styles.cardContainer}>
+              {Object.keys(data).map((key) => (
+                <OutlinedCard
+                  key={key}
+                  title={data[key].title}
+                  author={data[key].author ? data[key].author : "No Author"}
+                  scripture_reference={data[key]["scripture references"]}
+                  link={data[key]["text link"]}
+                />
+              ))}
+            </Box>
+          </Box>
+        ) : null}
+      </Box>
     </div>
   );
 }

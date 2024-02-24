@@ -4,14 +4,13 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import Box from "@mui/material/Box";
 import CardActions from "@mui/material/CardActions";
 
 const MyCard = ({ title, author, scripture_reference, link }) => {
   return (
     <Card
       sx={{
-        minWidth: 645,
+        width: "100%",
       }}
     >
       <CardContent>
@@ -41,24 +40,16 @@ export default function OutlinedCard({
   link,
 }) {
   return (
-    <Box
+    <Card
+      variant="outlined"
       sx={{
+        width: "90%",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        marginBottom: "15px",
       }}
     >
-      <Card
-        variant="outlined"
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        {MyCard({ title, author, scripture_reference, link })}
-      </Card>
-    </Box>
+      {MyCard({ title, author, scripture_reference, link })}
+    </Card>
   );
 }
